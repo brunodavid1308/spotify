@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/brunodavid1308/spotify/issues"
   },
-  "homepage": "https://github.com/brunodavid1308/spotify#readme"
+  "homepage": "https://github.com/brunodavid1308/spotify#readme",
+  "devDependencies": {
+    "browser-sync": "^2.28.3"
+  }
 }
