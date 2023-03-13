@@ -9,3 +9,34 @@ html {
 body {
   margin: 0;
 }
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "menu header"
+    "menu main"
+    "footer footer";
+  grid-template-rows: 4rem 1fr 5.6rem;
+  grid-template-columns: 18.2rem 1fr;
+}
+
+.header {
+  grid-area: header;
+  background-color: #f00;
+}
+
+.menu {
+  grid-area: menu;
+  background-color: yellowgreen;
+}
+
+.content {
+  grid-area: main;
+  background-color: grey;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: green;
+}
