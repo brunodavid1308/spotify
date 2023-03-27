@@ -130,7 +130,7 @@ svg {
   background-color: #181818;
   border-top: 1px solid #282828;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 3fr 4fr 3fr;
   padding: 0 1rem;
 }
 
@@ -171,4 +171,53 @@ svg {
 .footer__song-name-artist > *:hover {
   color: #fff;
   text-decoration: underline;
+}
+
+.footer__player {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0 1rem;
+}
+
+.player__playback-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.playback-bar__progress {
+  height: 4px;
+  background-color: white;
+  width: 100%;
+}
+
+.player__buttons {
+  align-self: center;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.player__buttons > * {
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  color: hsla(0, 0%, 100%, 0.7);
+}
+
+.player__buttons > button:nth-child(3) {
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.playback-bar__time {
+  color: #6a6a6a;
+  font-size: 0.6rem;
+  font-weight: 400;
 }
